@@ -1,0 +1,42 @@
+#parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.child {
+}
+
+#header {
+  grid-column: 1 / 5;
+  height: 30vh;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+#main {
+  grid-column: 2/4;
+  grid-row: 2 / 4;
+  background-color: aquamarine;
+  text-align: center;
+}
+
+#footer {
+  grid-column: 1 / 5;
+  grid-row: 4;
+  text-align: center;
+  background-color: tan;
+}
+
+#nav,
+#extra {
+  grid-row: 2/4;
+  text-align: center;
+  background-color: burlywood;
+}
+
+@media (width<600px) {
+  .child {
+    border: 3px solid red;
+  }
+}
