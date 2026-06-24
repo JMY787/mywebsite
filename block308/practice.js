@@ -1,0 +1,1 @@
+const card = Array.from({length:NUM_QUOTES}, makeQuote)
